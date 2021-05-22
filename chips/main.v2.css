@@ -2,12 +2,13 @@
 /*! Edit by Layserg */
 /* DEFAULT SETTINGS */
 :root {
-	--titlebar-username: "User"; 
-	--titlebar-cake: "❤"; 
+	--titlebar-username: "User";
+	--titlebar-cake: "❤";
 	--titlebar-cake-color: var(--main-color);
-  --background-primary: rgba(200,200,200,0.15); /* app background primary color [default: rgba(200,200,200,0.15)] */
-  --background-secondary: rgba(50,50,50,0.6); /* app background secondary color [default: rgba(50,50,50,0.6)] */
-  --mention-color: rgba(99, 89, 255, 0.99); /* color of mentioning a user in a chat [default: rgba(99, 89, 255, 0.99)] */
+  --font-display: var(--main-font);
+  --background-primary: rgba(200,200,200,0.15);
+  --background-secondary: rgba(50,50,50,0.6);
+  --mention-color: rgba(99, 89, 255, 0.99);
 }
 
 /* TITLEBAR */
@@ -51,6 +52,9 @@
 }
 .circleIconButton-1QV--U {
   background-color: var(--background-primary)
+}
+.overflow-WK9Ogt {
+  font-family: var(--font-display);
 }
 /* SETTINGS SIDEBAR */
 .sidebar-CFHs9e {
