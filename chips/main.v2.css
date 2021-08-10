@@ -68,6 +68,9 @@
 [aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="My Account-tab"].item-PXvHYJ:before {
   background-image: url(https://clearvision.gitlab.io/icons/person.svg);
 }
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="Profile Customization-tab"].item-PXvHYJ:before {
+  background-image: url(https://clearvision.gitlab.io/icons/edit.svg);
+}
 [aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="Privacy & Safety-tab"].item-PXvHYJ:before {
   background-image: url(https://clearvision.gitlab.io/icons/security.svg);
 }
