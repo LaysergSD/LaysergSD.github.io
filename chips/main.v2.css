@@ -65,7 +65,8 @@
   width: 11.5px !important;
 }
 /* UI COLOR */
-.avatarSpeaking-2c8-9i {
+.avatarSpeaking-2c8-9i,
+.border-Jn5IOt.speaking-B2MXPi {
   -webkit-box-shadow: 0 0 0 2px var(--main-color), inset 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-secondary);
 }
