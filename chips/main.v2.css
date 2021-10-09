@@ -64,6 +64,14 @@
 .thin-1ybCId::-webkit-scrollbar {
   width: 11.5px !important;
 }
+/* UI COLOR */
+.icon-3s6X1M {
+  color: var(--main-color);
+  filter: drop-shadow(0 0 3px var(--main-color));
+}
+.iconBadge-1N56q1.participating-1P_Z3z {
+  background-color: var(--background-secondary);
+}
 /* SETTINGS SIDEBAR ICONS */
 [aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="my-account-tab"].item-PXvHYJ:before {
   background-image: url(https://clearvision.gitlab.io/icons/person.svg);
