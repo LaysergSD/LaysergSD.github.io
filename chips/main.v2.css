@@ -77,7 +77,7 @@
 .iconBadge-1N56q1.participating-1P_Z3z {
   background-color: var(--background-secondary);
 }
-.circleIconButton-1XqULR { color: var(--main-color); }
+.circleIconButton-1XqULR { color: var(--main-color); background-color: var(--background-primary); }
 .circleIconButton-1XqULR.selected-2jcQaY { background-color: var(--main-color); }
 /* SETTINGS SIDEBAR ICONS */
 [aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="my-account-tab"].item-PXvHYJ:before {
