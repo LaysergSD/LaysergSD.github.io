@@ -43,6 +43,9 @@
   background-color: rgba(50, 50, 50, 0.4);
 }
 /* CHANNEL LIST PANELS */
+.childWrapper-anI2G9 > svg {
+  display: block !important;
+}
 .container-3baos1:before,
 .container-3baos1:after {
   content: "";
@@ -76,9 +79,6 @@
 .icon-3s6X1M {
   color: var(--main-color);
   filter: drop-shadow(0 0 3px var(--main-color));
-}
-.iconBadge-1N56q1.participating-1P_Z3z {
-  background-color: var(--background-secondary);
 }
 .circleIconButton-1XqULR { color: var(--main-color); background-color: var(--background-primary); }
 .circleIconButton-1XqULR.selected-2jcQaY { background-color: var(--main-color); }
