@@ -9,29 +9,34 @@
   --background-primary: rgba(200,200,200,0.15);
   --background-secondary: rgba(50,50,50,0.6);
   --mention-color: rgba(99, 89, 255, 0.99);
+  --channels-width: 250px;
 }
 
 /* TITLEBAR */
-.typeWindows-1za-n7 > .wordmark-2iDDfm:before {
+.typeWindows-1za-n7 > .wordmark-2iDDfm:before,
+.typeWindows-2-g3UY > .wordmark-2u86JB:before {
   content: var(--titlebar-username);
 }
-.typeWindows-1za-n7 > .wordmark-2iDDfm:after {
+.typeWindows-1za-n7 > .wordmark-2iDDfm:after,
+.typeWindows-2-g3UY > .wordmark-2u86JB:after {
   content: var(--titlebar-cake);
   color: var(--titlebar-cake-color);
   margin-top: 3px
 }
 /* FONT */
-.wrapper-2jXpOf.modeUnread-1qO3K1 .content-1x5b-n .mainContent-u_9PKf .name-23GUGE {
-  color:var(--channel-unread);
+.wrapper-2jXpOf.modeUnread-1qO3K1 .content-1x5b-n .mainContent-u_9PKf .name-23GUGE,
+.wrapper-NhbLHG.modeUnread-3Cxepe .content-1gYQeQ .mainContent-20q_Hp .name-28HaxV {
+  color: var(--channel-unread);
   text-shadow:0 0 3px;
   font-weight: bold
 }
-.username-1A8OIy, .name-uJV0GL,
-.theme-dark .mentioned-xhSam7 .mention {
+.username-1A8OIy, .name-uJV0GL, .theme-dark .mentioned-xhSam7 .mention,
+.username-h_Y3Us, .name-3Vmqxm, .theme-dark .mentioned-Tre-dv .mention {
   text-shadow: 1px 1px 1px #333, 0 0 1px #111; 
   font-weight: bold 
 }
-.username-1A8OIy {
+.username-1A8OIy,
+.username-h_Y3Us {
   font-size: 0.92rem;
 }
 .wrapper-3WhCwL {
@@ -39,40 +44,52 @@
   font-weight: bold !important;
 }
 /* TEXT CONTAINER */
-.textContainer-C0szpm {
+.textContainer-C0szpm,
+.textContainer-36wgKK {
   background-color: rgba(50, 50, 50, 0.4);
 }
-/* CHANNEL LIST PANELS */
-.childWrapper-anI2G9 > svg {
+/* SEARCH CONTAINER */
+.container-2oNtJn {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+}
+/* CHANNEL LIST */
+.childWrapper-anI2G9 > svg,
+.childWrapper-1j_1ub > svg {
   display: block !important;
 }
-.container-3baos1:before,
-.container-3baos1:after {
+.container-3baos1:before, .container-3baos1:after,
+.container-YkUktl:before, .container-YkUktl:after {
   content: "";
 }
-.sidebar-2K8pFh {
-  width: 250px
+.sidebar-2K8pFh,
+.sidebar-1tnWFu {
+  width: var(--channels-width)
 }
-.circleIconButton-1QV--U {
+.circleIconButton-1QV--U,
+.circleIconButton-1VxDrg {
   background-color: var(--background-primary)
 }
-.container-3w7J-x .bannerImage-3KhIJ6 {
+.container-3w7J-x .bannerImage-3KhIJ6,
+.container-1NXEtd .bannerImage-ubW8K- {
   width: 100%
 }
 /* SETTINGS SIDEBAR */
-.sidebar-CFHs9e {
+.sidebar-CFHs9e,
+.sidebar-nqHbhN {
   width: 260px
 }
-.sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP {
+.sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP,
+.sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh {
   margin-right: -5px
 }
 /* SCROLLBAR */
-.thin-1ybCId::-webkit-scrollbar {
+.thin-1ybCId::-webkit-scrollbar,
+.thin-31rlnD::-webkit-scrollbar {
   width: 11.5px !important;
 }
 /* UI COLOR */
-.avatarSpeaking-2c8-9i,
-.border-Jn5IOt.speaking-B2MXPi {
+.avatarSpeaking-2c8-9i, .border-Jn5IOt.speaking-B2MXPi,
+.avatarSpeaking-33RRJU, .border-2BJQjd.speaking-3RWJBr {
   -webkit-box-shadow: 0 0 0 2px var(--main-color), inset 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px var(--background-secondary);
 }
@@ -80,106 +97,143 @@
   color: var(--main-color);
   filter: drop-shadow(0 0 3px var(--main-color));
 }
-.circleIconButton-1XqULR { color: var(--main-color); background-color: var(--background-primary); }
-.circleIconButton-1XqULR.selected-2jcQaY { background-color: var(--main-color); }
+.circleIconButton-1XqULR,
+.circleIconButton-1VxDrg {
+  color: var(--main-color); background-color: var(--background-primary);
+}
+.circleIconButton-1XqULR.selected-2jcQaY,
+.circleIconButton-1VxDrg.selected-2r1Hvo {
+  background-color: var(--main-color);
+}
 /* SETTINGS SIDEBAR ICONS */
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="my-account-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="my-account-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="my-account-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/person.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="profile-customization-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="profile-customization-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="profile-customization-tab"].item-3XjbnG:before {
   /*background-image: url(https://clearvision.gitlab.io/icons/edit.svg);*/
   background-image: url(https://laysergsd.github.io/chips/icons/account-settings.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="privacy-&-safety-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="privacy-&-safety-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="privacy-&-safety-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/security.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="authorized-apps-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="authorized-apps-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="authorized-apps-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/apps.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="connections-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="connections-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="connections-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/link.svg);
 }
 
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="subscriptions-tab"].item-PXvHYJ:before {
-  background-image: url(https://laysergsd.github.io/chips/icons/package-variant.svg);
-}
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="discord-nitro-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="discord-nitro-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="discord-nitro-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/nitro.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="nitro-server-boost-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="nitro-server-boost-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="nitro-server-boost-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/server_boost.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="library-inventory-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="subscriptions-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="subscriptions-tab"].item-3XjbnG:before {
+  background-image: url(https://laysergsd.github.io/chips/icons/package-variant.svg);
+}
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="library-inventory-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="library-inventory-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/gift.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="billing-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="billing-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="billing-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/payment.svg);
 }
 
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="appearance-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="appearance-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="appearance-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/camera.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="accessibility-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="accessibility-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="accessibility-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/flask.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="voice-&-video-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="voice-&-video-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="voice-&-video-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/mic.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="text-&-images-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="text-&-images-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="text-&-images-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/chat.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="notifications-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="notifications-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="notifications-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/notifications.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="keybinds-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="keybinds-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="keybinds-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/keyboard.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="language-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="language-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="language-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/language.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="windows-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="windows-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="windows-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/windows.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="linux-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="linux-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="linux-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/linux.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="streamer-mode-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="streamer-mode-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="streamer-mode-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/videocam.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="advanced-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="advanced-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="advanced-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/bug.svg);
 }
 
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="game-activity-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="game-activity-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="game-activity-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/games.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="overlay-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="overlay-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="overlay-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/aspect_ratio.svg);
 }
 
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="settings-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="settings-tab"].item-PXvHYJ:before,
+.sidebar-nqHbhN .bd-settings-tab.item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/betterdiscord.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="emotes-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="emotes-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="emotes-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/emote.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="customcss-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="customcss-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="customcss-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/code_braces.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="plugins-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="plugins-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="plugins-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/puzzle.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="themes-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="themes-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="themes-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/palette.svg);
 }
 
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="changelog-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="changelog-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="changelog-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/history.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="hypesquad-online-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="hypesquad-online-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="hypesquad-online-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/hypesquad.svg);
 }
-[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="logout-tab"].item-PXvHYJ:before {
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="logout-tab"].item-PXvHYJ:before,
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="logout-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.gitlab.io/icons/exit.svg);
 }
 /* CRASH SCREEN */
