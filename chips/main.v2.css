@@ -44,6 +44,12 @@
   color: var(--mention-color) !important; 
   font-weight: bold !important;
 }
+.repliedMessage-3Z6XBG .username-h_Y3Us, 
+.threadMessageAccessory-2W9mjC .username-h_Y3Us
+{
+  color: var(--mention-color) !important;
+  text-shadow: 1px 1px 1px #333, 0 0 1px #111; 
+}
 /* TEXT CONTAINER */
 .textContainer-C0szpm,
 .textContainer-36wgKK {
