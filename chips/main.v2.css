@@ -244,12 +244,18 @@
   background-image: url(https://clearvision.gitlab.io/icons/exit.svg);
 }
 /* CRASH SCREEN */
-.note-450gs3 > div > p:first-child:before {
+.note-450gs3 > div > p:first-child:before,
+.note-Ph806N > div > p:first-child:before {
   content: "Похоже, тебя дропнула ошибка 9000 уровня.";
 }
-.note-450gs3 > div > p:first-child:after {
+.note-450gs3 > div > p:first-child:after,
+.note-Ph806N > div > p:first-child:after {
   content: "Возможно, это был один из плагинов?";
 }
-.note-450gs3 > div > p:last-child:after {
-  content: "Нажмите Ctrl + Shift + I или Cmd + Alt + I чтобы проверить консоль на наличие ошибок.";
+.note-450gs3 > div > p:last-child:after,
+.note-Ph806N > div > p:last-child:after {
+  content: "Ctrl + Shift + I или Cmd + Alt + I чтобы проверить консоль на наличие ошибок.";
+}
+.errorPage-2pZ2Kq .contents-3ca1mk:after {
+  content: "Респавн с последнего чекпоинта";
 }
