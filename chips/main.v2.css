@@ -13,6 +13,7 @@
   --background-secondary: rgba(50,50,50,0.6);
   --mention-color: rgba(99, 89, 255, 0.99);
   --channels-width: 250px;
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg) !important;
 }
 
 /* TITLEBAR */
@@ -132,6 +133,9 @@
 [aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="authorized-apps-tab"].item-PXvHYJ:before,
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="authorized-apps-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.github.io/icons/apps.svg);
+}
+[aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="sessions-tab"].item-3XjbnG:before {
+  background-image: url(https://laysergsd.github.io/chips/icons/devices.svg);
 }
 [aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="connections-tab"].item-PXvHYJ:before,
 [aria-label=USER_SETTINGS] .sidebar-nqHbhN [aria-controls="connections-tab"].item-3XjbnG:before {
