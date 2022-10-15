@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*! Edit by Layserg */
+
+@import url(https://clearvision.github.io/ClearVision-v6/main.css);
+
 /* DEFAULT SETTINGS */
 :root {
 	--titlebar-username: "User";
