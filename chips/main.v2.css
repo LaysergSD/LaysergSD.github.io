@@ -13,6 +13,7 @@
   --background-secondary: rgba(50,50,50,0.6);
   --mention-color: rgba(99, 89, 255, 0.99);
   --channels-width: 250px;
+  --overlay-background: rgba(0, 0, 0, 0.8);
   --home-icon: url(https://clearvision.github.io/icons/discord.svg) !important;
 }
 
@@ -222,6 +223,19 @@
 .sidebar-nqHbhN [aria-controls="logout-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.github.io/icons/exit.svg);
 }
+
+.userProfileInner-3F03PX:before {
+  background: var(--user-modal-image) var(--user-modal-position)/var(--user-modal-size) var(--user-modal-repeat) var(--user-modal-attachment);
+  filter: grayscale(var(--user-modal-grayscale)) sepia(var(--user-modal-sepia)) invert(var(--user-modal-invert)) brightness(var(--user-modal-brightness)) contrast(var(--user-modal-contrast)) saturate(var(--user-modal-saturation)) blur(var(--user-modal-blur));
+}
+.userPopoutInner-1hXSeY:before {
+  background: var(--user-popout-image) var(--user-popout-position)/var(--user-popout-size) var(--user-popout-repeat) var(--user-popout-attachment);
+  filter: grayscale(var(--user-popout-grayscale)) sepia(var(--user-popout-sepia)) invert(var(--user-popout-invert)) brightness(var(--user-popout-brightness)) contrast(var(--user-popout-contrast)) saturate(var(--user-popout-saturation)) blur(var(--user-popout-blur));
+}
+.overlayBackground-1KgwVi {
+  background-color: var(--overlay-background);
+}
+
 /* CRASH SCREEN */
 .note-450gs3 > div > p:first-child:before,
 .note-Ph806N > div > p:first-child:before {
