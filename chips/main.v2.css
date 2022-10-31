@@ -117,6 +117,10 @@
 .circleIconButton-1VxDrg.selected-2r1Hvo {
   background-color: var(--main-color);
 }
+/* DURATION PROGRESSBAR IN USERPOPUP */
+.bar-1GpknY {
+  background-color: #333;
+}
 /* SETTINGS SIDEBAR ICONS */
 .sidebar-nqHbhN [aria-controls="my-account-tab"].item-3XjbnG:before {
   background-image: url(https://clearvision.github.io/icons/person.svg);
