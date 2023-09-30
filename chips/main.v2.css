@@ -46,6 +46,7 @@
 }
 .wrapper-3WhCwL,
 .wrapper-1ZcZW- {
+  background-color: var(--mention-background) !important;
   color: var(--mention-color) !important; 
   font-weight: bold !important;
 }
