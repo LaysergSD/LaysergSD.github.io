@@ -20,12 +20,14 @@
 /* TITLEBAR */
 .typeWindows-1za-n7 > .wordmark-2iDDfm:before,
 .typeWindows-2-g3UY > .wordmark-2u86JB:before,
-.typeWindows-3ILlhq > .wordmark-3wYFg6:before {
+.typeWindows-3ILlhq > .wordmark-3wYFg6:before,
+.typeWindows_e41dab > .wordmark__5b8c9:before {
   content: var(--titlebar-username);
 }
 .typeWindows-1za-n7 > .wordmark-2iDDfm:after,
 .typeWindows-2-g3UY > .wordmark-2u86JB:after,
-.typeWindows-3ILlhq > .wordmark-3wYFg6:after {
+.typeWindows-3ILlhq > .wordmark-3wYFg6:after,
+.typeWindows_e41dab > .wordmark__5b8c9:after {
   content: var(--titlebar-cake);
   color: var(--titlebar-cake-color);
   margin-top: 3px
