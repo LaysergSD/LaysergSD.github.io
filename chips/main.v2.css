@@ -111,6 +111,10 @@
 .thin-31rlnD::-webkit-scrollbar {
   width: 11.5px !important;
 }
+/* USER CONTAINER */
+.theme-dark .avatarWrapper_b2ca13 {
+  min-width: 0;
+}
 /* UI COLOR */
 .avatarSpeaking-2c8-9i, .border-Jn5IOt.speaking-B2MXPi,
 .avatarSpeaking-33RRJU, .border-2BJQjd.speaking-3RWJBr {
