@@ -18,16 +18,12 @@
 }
 
 /* TITLEBAR */
-.typeWindows-1za-n7 > .wordmark-2iDDfm:before,
-.typeWindows-2-g3UY > .wordmark-2u86JB:before,
-.typeWindows-3ILlhq > .wordmark-3wYFg6:before,
-.typeWindows_e41dab > .wordmark__5b8c9:before {
+.typeWindows_e41dab > .wordmark__5b8c9:before,
+.typeWindows_a934d8 > .wordmark_a934d8:before {
   content: var(--titlebar-username);
 }
-.typeWindows-1za-n7 > .wordmark-2iDDfm:after,
-.typeWindows-2-g3UY > .wordmark-2u86JB:after,
-.typeWindows-3ILlhq > .wordmark-3wYFg6:after,
-.typeWindows_e41dab > .wordmark__5b8c9:after {
+.typeWindows_e41dab > .wordmark__5b8c9:after,
+.typeWindows_a934d8 > .wordmark_a934d8:after {
   content: var(--titlebar-cake);
   color: var(--titlebar-cake-color);
   margin-top: 3px
