@@ -67,6 +67,29 @@
 .textContainer-36wgKK {
   background-color: rgba(50, 50, 50, 0.4);
 }
+/* MESSAGE SPOILER */
+.spoilerContent_aa9639.hidden_aa9639 {
+    position: relative;
+    display: inline-block;
+}
+.spoilerContent_aa9639.hidden_aa9639::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, white 10%, transparent 10%); /* Белые точки */
+    background-size: 8px 8px; /* Размер точек */
+    pointer-events: none; /* Чтобы не мешать взаимодействию с текстом */
+    transform: translate(-50%, -50%);
+    animation: float 3s ease-in-out infinite; /* Анимация плавания */
+}
+@keyframes float {
+    0% {transform: translate(-50%, -50%) translateX(0);}
+    50% {transform: translate(-50%, -50%) translateX(-2px);}
+    100% {transform: translate(-50%, -50%) translateX(0);}
+}
 /* SEARCH CONTAINER */
 .container-2oNtJn {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * .6));
