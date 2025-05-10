@@ -113,15 +113,6 @@
 .container-1NXEtd .bannerImage-ubW8K- {
   width: 100%
 }
-/* SETTINGS SIDEBAR */
-.sidebar-CFHs9e,
-.sidebar__23e6b {
-  width: 260px
-}
-.sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP,
-.sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh {
-  margin-right: -5px
-}
 /* SCROLLBAR */
 .thin-1ybCId::-webkit-scrollbar,
 .thin-31rlnD::-webkit-scrollbar {
@@ -150,6 +141,9 @@
 .circleIconButton-1VxDrg.selected-2r1Hvo {
   background-color: var(--main-color);
 }
+.base__2b1f5 {
+    color: var(--main-color);
+}
 /* DURATION PROGRESSBAR IN USERPOPUP */
 .bar-1GpknY {
   background-color: #333;
@@ -157,6 +151,27 @@
 /* SETTINGS SIDEBAR */
 .info__2debe::after {
   content: "";
+}
+.sidebar__23e6b {
+  width: 330px
+}
+.sidebar__23e6b .item_b3f026:before {
+  content:"";
+  position:absolute;
+  width:0;
+  height:24px;
+  left:15px;
+  margin-top:-2px;
+  z-index:999;
+  transition:all .15s ease-in-out
+}
+.sidebar__23e6b .side_b3f026 .item_b3f026.selected_b3f026 {
+  background:rgba(0,0,0,0);
+  transition:all .15s ease-in-out,background .3s .2s;
+  padding-left:50px
+}
+.sidebar__23e6b .item_b3f026.selected_b3f026:before {
+  width:24px
 }
 /* SETTINGS SIDEBAR ICONS */
 .sidebar__23e6b [aria-controls="my-account-tab"].item_b3f026:before {
@@ -166,20 +181,31 @@
   /*background-image: url(https://clearvision.gitlab.io/icons/edit.svg);*/
   background-image: url(https://laysergsd.github.io/chips/icons/account-settings.svg);
 }
+.sidebar__23e6b [aria-controls="content-&-social-tab"].item_b3f026:before {
+  background-image: url(https://laysergsd.github.io/chips/icons/social.svg);
+}
 .sidebar__23e6b [aria-controls="data-&-privacy-tab"].item_b3f026:before {
   background-image: url(https://clearvision.github.io/icons/security.svg);
 }
-.sidebar__23e6b [aria-controls="content-&-social-tab"].item_b3f026:before {
-  background-image: url(https://clearvision.github.io/icons/social.svg);
+.sidebar__23e6b [aria-controls="family-center-tab"].item_b3f026:before{
+  background-image:url(https://clearvision.github.io/icons/family.svg)
 }
 .sidebar__23e6b [aria-controls="authorized-apps-tab"].item_b3f026:before {
   background-image: url(https://clearvision.github.io/icons/apps.svg);
 }
 .sidebar__23e6b [aria-controls="sessions-tab"].item_b3f026:before {
-  background-image: url(https://laysergsd.github.io/chips/icons/devices.svg);
+  /*background-image: url(https://laysergsd.github.io/chips/icons/devices.svg);*/
+  background-image: url(https://clearvision.github.io/icons/devices.svg);
 }
 .sidebar__23e6b [aria-controls="connections-tab"].item_b3f026:before {
   background-image: url(https://clearvision.github.io/icons/link.svg);
+}
+.sidebar__23e6b [aria-controls="settings-clips-tab"].item_b3f026:before {
+  background-image: url(https://clearvision.github.io/icons/clips.svg);
+}
+
+.sidebar__23e6b [aria-controls="friend-requests-tab"].item_b3f026:before{
+  background-image:url(https://clearvision.github.io/icons/person_add.svg)
 }
 
 .sidebar__23e6b [aria-controls="discord-nitro-tab"].item_b3f026:before {
@@ -232,6 +258,9 @@
   background-image: url(https://clearvision.github.io/icons/bug.svg);
 }
 
+.sidebar__23e6b [aria-controls="activity-privacy-tab"].item_b3f026:before{
+  background-image:url(https://clearvision.github.io/icons/controller-off.svg)
+}
 .sidebar__23e6b [aria-controls="game-activity-tab"].item_b3f026:before {
   background-image: url(https://clearvision.github.io/icons/games.svg);
 }
